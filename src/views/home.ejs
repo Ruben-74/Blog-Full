@@ -1,0 +1,20 @@
+<main>
+  <section>
+    <div class="title-content">
+      <h2>Les meilleurs destinations</h2>
+    </div>
+
+    <div class="cards-container">
+      <% for(const data of datas) { %>
+      <article>
+        <div>
+          <h3><%=data.title%></h3>
+          <img src="/images/<%=data.img%>" alt="<%= data.title %>" />
+        </div>
+        <div><%- truncate(data.content, 100) %></div>
+        <a href="/story/<%= data.id%>">Read more</a>
+      </article>
+      <% } %>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,18 @@
+<main>
+  <section>
+    <div>
+      <article id="article-home">
+        <h2><%= data.title%></h2>
+        <img src="/images/<%=data.img%>" alt="<%= data.title %>" />
+        <%- data.content %>
+        <p>
+          By <%= data.author %> on <%= new
+          Date(data.publish_date).toLocaleDateString() %>
+        </p>
+        <a href="/" title="Back to Home Page"
+          ><i class="fa-solid fa-arrow-left"></i> Back to home</a
+        >
+      </article>
+    </div>
+  </section>
+</main>

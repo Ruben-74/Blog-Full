@@ -1,5 +1,15 @@
 <header>
   <nav>
+    <% if(admin_view){ %>
+    <a href="/admin" class="logo">Back Office</a>
+
+    <div>
+      <a href="/admin/story">Gérer les articles</a>
+      <a href="/admin/category">Gérer les catégories</a>
+      <a href="/">Home</a>
+    </div>
+
+    <% } else { %>
     <a href="/" class="logo">My Blog</a>
     <div>
       <a href="/">home</a>
@@ -8,6 +18,8 @@
       <a href="/authentication">Sign-in</a>
       <a href="/admin">ADMIN</a>
     </div>
+
+    <% }%>
   </nav>
   <!-- Autres contenus de l'en-tête ici -->
 </header>

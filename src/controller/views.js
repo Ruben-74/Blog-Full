@@ -10,6 +10,7 @@ const home_view = (req, res) => {
         template: "home",
         datas,
         truncate,
+        admin_view: false,
       });
     })
     .catch((error) => {
@@ -25,6 +26,7 @@ const story_view = (req, res) => {
       res.render("template", {
         template: "story",
         data,
+        admin_view: false,
       });
     });
   } catch (error) {

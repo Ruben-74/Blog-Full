@@ -7,9 +7,8 @@ const router = Router();
 
 router.get("/", home_view);
 router.get("/story/:id", story_view);
-router.get("*", not_found_view);
-
 // ADMIN
 router.get("/admin", admin_view);
+router.get("*", not_found_view);
 
 export default router;

@@ -3,6 +3,7 @@ import pool from "../config/db.js";
 
 export const admin_view = (req, res) => {
   res.render("template", {
-    template: "/admin/index",
+    template: "admin/index",
+    admin_view: true,
   });
 };
